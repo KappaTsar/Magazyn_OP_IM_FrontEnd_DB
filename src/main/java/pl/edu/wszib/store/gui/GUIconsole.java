@@ -1,7 +1,7 @@
-package pl.edu.wszib.gui;
+package pl.edu.wszib.store.gui;
 
-import pl.edu.wszib.database.DBInterface;
-import pl.edu.wszib.model.Product;
+import pl.edu.wszib.store.database.DBInterface;
+import pl.edu.wszib.store.model.Product;
 
 import java.util.Scanner;
 

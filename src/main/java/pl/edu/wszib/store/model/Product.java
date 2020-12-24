@@ -1,4 +1,4 @@
-package pl.edu.wszib.model;
+package pl.edu.wszib.store.model;
 
 public class Product {
     private String id;

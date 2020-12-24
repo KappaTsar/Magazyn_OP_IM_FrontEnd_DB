@@ -1,6 +1,6 @@
-package pl.edu.wszib.database;
+package pl.edu.wszib.store.database;
 
-import pl.edu.wszib.model.Product;
+import pl.edu.wszib.store.model.Product;
 
 import java.util.List;
 

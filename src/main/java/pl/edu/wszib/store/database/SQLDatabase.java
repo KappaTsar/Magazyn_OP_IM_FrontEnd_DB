@@ -1,7 +1,7 @@
-package pl.edu.wszib.database;
+package pl.edu.wszib.store.database;
 
 import org.apache.commons.codec.digest.DigestUtils;
-import pl.edu.wszib.model.Product;
+import pl.edu.wszib.store.model.Product;
 
 import java.util.ArrayList;
 import java.util.List;
