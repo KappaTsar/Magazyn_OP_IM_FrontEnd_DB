@@ -5,18 +5,24 @@
     width: 80%;
     margin: 10px auto;
     font-size: 20px;
+    display: block;
 }
 .name {
-    width: 39%;
+    width: 30%;
     display: inline-block;
 }
+
 .pieces {
-    width: 20%;
+    width: 15%;
     display: inline-block;
 }
 .price {
-    width: 20%;
+    width: 15%;
     display: inline-block;
+}
+.sum {
+    font-size: 22px;
+    font-weight: bold;
 }
 .total {
     width: 20%;

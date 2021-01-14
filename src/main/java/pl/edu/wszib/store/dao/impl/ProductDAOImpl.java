@@ -47,7 +47,7 @@ public class ProductDAOImpl implements IProductDAO {
             preparedStatement.setString(1, product.getName());
             preparedStatement.setDouble(2, product.getPrice());
             preparedStatement.setInt(3, product.getQuan());
-            preparedStatement.setInt(4, product.getId());
+
 
             preparedStatement.executeUpdate();
         } catch (SQLException throwables) {
