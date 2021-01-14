@@ -1,6 +1,18 @@
 package pl.edu.wszib.store.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import static javax.persistence.GenerationType.IDENTITY;
+
+@Entity(name = "User")
+@Table(name = "tuser")
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = IDENTITY)
     private int id;
     private String login;
     private String pass;

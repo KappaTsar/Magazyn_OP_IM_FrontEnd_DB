@@ -29,6 +29,7 @@ public class AdminController {
             return "redirect:/login";
         }
         Product product = this.productService.getProductById(id);
+
         model.addAttribute("product", product);
         model.addAttribute("isLogged", this.sessionObject.isLogged());
         model.addAttribute("role", this.sessionObject.isLogged() ? this.sessionObject.getLoggedUser().getRole().toString() : null);

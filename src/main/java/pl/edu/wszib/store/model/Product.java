@@ -1,6 +1,18 @@
 package pl.edu.wszib.store.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import static javax.persistence.GenerationType.IDENTITY;
+
+@Entity(name = "Product")
+@Table(name = "tproduct")
 public class Product {
+
+    @Id
+    @GeneratedValue(strategy = IDENTITY)
     private int    id;
     private String name;
     private double price;
@@ -11,6 +23,9 @@ public class Product {
         this.name = name;
         this.price = price;
         this.quan = quan;
+    }
+
+    public Product() {
     }
 
     public int getId(){
@@ -51,7 +66,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "Productdaoimpl{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
